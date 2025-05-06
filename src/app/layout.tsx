@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type {Metadata} from "next";
+import {Geist, Geist_Mono} from "next/font/google";
+// import Link from "next/link";
 import "./globals.scss";
+import GlobalNavigation from "@/component/GlobalNavigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,9 +25,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <header>
+          <h1>NEXT.JS PRACTICE</h1>
+        </header>
+        <GlobalNavigation />
+        <div className="container">{children}</div>
       </body>
     </html>
   );
