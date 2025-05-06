@@ -24,10 +24,21 @@
 .parent {
     border: 1px solid #666;
     padding: 20px;
-
     padding-bottom: 30px;
     margin-bottom: 30px;
 
+    span {
+        background-color: black;
+        display: block;
+        width: 150px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+    }
+}
+
+.child {
+    border: 1px solid #666;
+    padding: 20px;
     .content > div {
         display: flex;
         align-items: center;
@@ -68,18 +79,6 @@
                 background-color: blue;
             }
         }
-    }
-}
-
-.child {
-    border: 1px solid #666;
-    padding: 20px;
-    span {
-        background-color: black;
-        display: block;
-        width: 150px;
-        aspect-ratio: 1/1;
-        border-radius: 50%;
     }
 }
 

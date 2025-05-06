@@ -14,9 +14,16 @@ import img2 from "./images/2.png";
 import img3 from "./images/3.png";
 
 const Btn = () => {
-    const [color, setColor] = useState<string>("");
-    const [isActive, setIsActive] = useState<boolean>(true);
-    const [size, setSize] = useState<number>(150);
+    const [color, setColor] = useState<string>("black");
+    const [width, setWidth] = useState<number>(150);
+
+    // 스타일 객체
+    const style = {
+        backgroundColor: color,
+        width: width,
+    };
+
+    console.log(`[color: ${color}] [size: ${width}]`);
 
     return (
         <div className={styles.container}>
@@ -25,45 +32,12 @@ const Btn = () => {
                 <div>
                     <div className={styles.parent}>
                         <h2 className={styles.title}>부모 컴포넌트</h2>
-                        <div className={styles.content}>
-                            <div className={styles.colorWrap}>
-                                <p>background-color :</p>
-                                <button type="button" onClick={() => setColor("red")}>
-                                    red
-                                </button>
-                                <button type="button" onClick={() => setColor("green")}>
-                                    green
-                                </button>
-                                <button type="button" onClick={() => setColor("blue")}>
-                                    blue
-                                </button>
-                            </div>
-
-                            <div className={styles.activeWrap}>
-                                <p>display :</p>
-                                <button type="button" onClick={() => setIsActive(true)}>
-                                    true
-                                </button>
-                                <button type="button" onClick={() => setIsActive(false)}>
-                                    false
-                                </button>
-                            </div>
-
-                            <div className={styles.sizeWrap}>
-                                <p>size : {size}</p>
-                                <button type="button" onClick={() => setSize(size + 5)}>
-                                    +5
-                                </button>
-                                <button type="button" onClick={() => setSize(size - 5)}>
-                                    -5
-                                </button>
-                            </div>
-                        </div>
+                        <span style={style}></span>
                     </div>
 
                     <div className={styles.child}>
                         <h2 className={styles.title}>자식 컴포넌트</h2>
-                        <Child color={color} isActive={isActive} size={size} />
+                        <Child width={width} setColor={setColor} setWidth={setWidth} />
                     </div>
                 </div>
                 <div className={styles.imageWrap}>

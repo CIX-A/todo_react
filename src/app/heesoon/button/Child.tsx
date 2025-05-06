@@ -1,14 +1,40 @@
-const Child = ({ color, isActive, size }: { color: string; isActive: boolean; size: number }) => {
-    console.log(`[color: ${color}] [isActive : ${isActive}] [size: ${size}]`);
+import styles from "./page.module.scss";
 
-    // 스타일 객체
-    const style = {
-        backgroundColor: color,
-        display: isActive ? "block" : "none",
-        width: size,
-    };
+const Child = ({
+    setColor,
+    setWidth,
+    width,
+}: {
+    setColor: (color: string) => void;
+    setWidth: (width: number) => void;
+    width: number;
+}) => {
+    return (
+        <div className={styles.content}>
+            <div className={styles.colorWrap}>
+                <p>background-color :</p>
+                <button type="button" onClick={() => setColor("red")}>
+                    red
+                </button>
+                <button type="button" onClick={() => setColor("green")}>
+                    green
+                </button>
+                <button type="button" onClick={() => setColor("blue")}>
+                    blue
+                </button>
+            </div>
 
-    return <span style={style}></span>;
+            <div className={styles.sizeWrap}>
+                <p>width : {width}</p>
+                <button type="button" onClick={() => setWidth(width + 5)}>
+                    +5
+                </button>
+                <button type="button" onClick={() => setWidth(width - 5)}>
+                    -5
+                </button>
+            </div>
+        </div>
+    );
 };
 
 export default Child;
