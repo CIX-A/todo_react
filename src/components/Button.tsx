@@ -30,7 +30,7 @@ const Button: React.FC<ButtonProps> = ({
         className,
     ].filter(Boolean).join(' ');
 
-    // JSX 반환
+    // 버튼 컴포넌트 반환
     return (
         <button
             className={buttonClasses}
