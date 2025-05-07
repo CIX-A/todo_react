@@ -3,7 +3,7 @@
 import React from 'react';
 import styles from './Button.module.scss';
 
-// Props 타입 정의
+// Props 타입 정의 typescript
 interface ButtonProps {
     children: React.ReactNode;
     type?: 'primary' | 'secondary' | 'danger'; // 버튼 스타일 타입
@@ -22,10 +22,11 @@ const Button: React.FC<ButtonProps> = ({
     onClick,
     className = '', // 기본값: 빈 문자열
 }) => {
+    const baseClass = styles.button;
     const buttonClasses = [
-        styles.button,
-        styles[type],
-        size !== 'medium' ? styles[size] : '',
+        baseClass,
+        `${baseClass}--${type}`,
+        size !== 'medium' ? `${baseClass}--${size}` : '',
         className,
     ].filter(Boolean).join(' ');
 

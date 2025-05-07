@@ -12,28 +12,28 @@
     }
 
     // 버튼 타입별 스타일
-    &.primary {
+    &--primary {
         background-color: var(--primary);
         color: #fff;
     }
 
-    &.secondary {
+    &--secondary {
         background-color: var(--secondary);
         color: #1a1a1a;
     }
 
-    &.danger {
+    &--danger {
         background-color: var(--danger);
         color: #fff;
     }
 
     // 버튼 크기별 스타일
-    &.small {
+    &--small {
         padding: 4px 8px;
         font-size: 12px;
     }
 
-    &.large {
+    &--large {
         padding: 12px 24px;
         font-size: 18px;
     }
