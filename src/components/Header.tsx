@@ -4,7 +4,7 @@ import styles from './Header.module.scss';
 const Header = () => {
     return (
         <header className={styles.header}>
-            <h1 className={styles.title}>Todo App</h1>
+            <h1 className={styles.title}>todo react</h1>
         </header>
     );
 };

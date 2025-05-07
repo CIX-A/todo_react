@@ -4,7 +4,7 @@ import styles from './Footer.module.scss';
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            © 2024 Todo App. All rights reserved.
+            Todo react CiX A hyungchul
         </footer>
     );
 };
