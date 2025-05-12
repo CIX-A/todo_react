@@ -1,13 +1,13 @@
 # CIX A React todo react (hyungchul, eunseok, heesoon)
 
 ## 설치환경
-node - 22.14.0 (lts)
-nextJS - 15.3.2
-sass - 10.9.2
-Typescript
-AppRouter
-Turbopack
-ESLint
+- node - 22.14.0 (lts)
+- nextJS - 15.3.2
+- sass - 10.9.2
+- Typescript
+- AppRouter
+- Turbopack
+- ESLint
 
 ## 세팅
 1. 노드버전 확인 (위 설치환경 참조)
