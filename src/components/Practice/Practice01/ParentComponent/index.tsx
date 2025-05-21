@@ -1,8 +1,8 @@
 "use client";
 
-import styles from "./ParentComponent.module.scss";
+import styles from "./styles.module.scss";
 import {useState} from "react";
-import ChildrenComponent from "./ChildrenComponent";
+import ChildrenComponent from "../ChildrenComponent";
 
 export default function ParentComponent() {
   // 상태

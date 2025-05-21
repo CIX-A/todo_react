@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./GlobalNavigation.module.scss";
+import styles from "./styles.module.scss";
 
 export default function GlobalNavigation() {
   return (
@@ -9,7 +9,10 @@ export default function GlobalNavigation() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/Practice01">Practice01</Link>
+          <Link href="/Practice/Practice01">Practice01</Link>
+        </li>
+        <li>
+          <Link href="/Practice/Practice02">Practice02</Link>
         </li>
       </ul>
     </nav>

@@ -1,4 +1,4 @@
-import styles from "./ChildrenComponent.module.scss";
+import styles from "./styles.module.scss";
 
 export default function ChildrenComponent({clickButton, count}: {clickButton: () => void, count: number}) {
   return (

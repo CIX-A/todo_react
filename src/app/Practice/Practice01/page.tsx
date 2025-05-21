@@ -1,5 +1,5 @@
-import styles from "./page.module.scss";
-import ParentComponent from "@/component/Practice01/ParentComponent";
+import styles from "../practice.module.scss";
+import ParentComponent from "@/components/Practice/Practice01/ParentComponent/index";
 export default function Practice01() {
   return (
     <div className={`${styles.practice} container`}>

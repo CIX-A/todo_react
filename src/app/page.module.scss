@@ -6,13 +6,16 @@
   padding: 40px 20px;
 
   &__title {
-    font-size: fz(32);
+    font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
   }
   ul {
     margin-top: 20px;
-    font-size: fz(20);
+    font-size: 20px;
     list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }

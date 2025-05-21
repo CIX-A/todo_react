@@ -9,7 +9,10 @@ export default function Home() {
       <div className={styles.page__content}>
         <ul>
           <li>
-            <Link href="/Practice01">Practice01</Link>
+            <Link href="/Practice/Practice01">Practice01</Link>
+          </li>
+          <li>
+            <Link href="/Practice/Practice02">Practice02</Link>
           </li>
         </ul>
       </div>
